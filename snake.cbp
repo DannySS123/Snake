@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="snake" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="$(#sdl2.include)/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2" />
+			<Add library="SDL2_gfx" />
+			<Add library="SDL2_image" />
+			<Add library="SDL2_mixer" />
+			<Add library="SDL2_ttf" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="$(#sdl2.lib)" />
+		</Linker>
+		<Unit filename="resources/Apple_eat.mp3" />
+		<Unit filename="resources/LiberationSerif-Regular.ttf" />
+		<Unit filename="resources/Netherplace.mp3" />
+		<Unit filename="resources/apple.png" />
+		<Unit filename="resources/bg.png" />
+		<Unit filename="resources/score.txt" />
+		<Unit filename="scripts/debugmalloc.h" />
+		<Unit filename="scripts/draw_fv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scripts/draw_fv.h" />
+		<Unit filename="scripts/game_board.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scripts/game_board.h" />
+		<Unit filename="scripts/sdl_utility.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scripts/sdl_utility.h" />
+		<Unit filename="scripts/snake_fv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scripts/snake_fv.h" />
+		<Unit filename="scripts/widgets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scripts/widgets.h" />
+		<Unit filename="snake.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
